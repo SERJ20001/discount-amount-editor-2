@@ -18,8 +18,8 @@
       <section class="amount-panel" aria-label="Настройка скидки">
         <div class="amount-field">
           <div class="amount-value">
-            <span id="amount-mirror" aria-hidden="true">50</span>
-            <input id="amount" type="text" inputmode="none" autocomplete="off" spellcheck="false" aria-label="Скидка в рублях" aria-describedby="discount-explanation" value="50" maxlength="4">
+            <span id="amount-mirror" aria-hidden="true">775</span>
+            <input id="amount" type="text" inputmode="none" autocomplete="off" spellcheck="false" aria-label="Скидка в рублях" aria-describedby="discount-explanation" value="775" maxlength="4">
           </div>
           <span class="currency" aria-hidden="true">₽</span>
           <button id="clear" class="clear" type="button" aria-label="Очистить сумму">
@@ -31,9 +31,9 @@
             <div id="track-fill" class="track-fill"></div>
             <img id="thumb" src="assets/thumb.svg" width="16" height="16" alt="">
           </div>
-          <input id="discount-range" class="range" type="range" min="50" max="1500" step="1" value="50" aria-label="Размер скидки" aria-describedby="discount-explanation" aria-valuetext="50 рублей">
+          <input id="discount-range" class="range" type="range" min="50" max="1500" step="1" value="775" aria-label="Размер скидки" aria-describedby="discount-explanation" aria-valuetext="775 рублей">
         </div>
-        <div id="exceptions" class="exceptions" role="group" aria-label="12 товаров с минимальной скидкой 250 рублей">
+        <div id="exceptions" class="exceptions" role="group" aria-label="12 товаров с минимальной скидкой 250 рублей" hidden>
           <span class="thumbnails" aria-hidden="true">
             <span class="thumbnail"><img src="assets/product-1.png" alt=""></span>
             <span class="thumbnail"><img src="assets/product-2.png" alt=""></span>
@@ -42,7 +42,7 @@
           <span class="exception-amount">250 ₽</span>
           <span class="minimum-marker" aria-hidden="true"></span>
         </div>
-        <p id="discount-explanation" class="explanation" role="status" aria-live="polite">Для 12 товаров 50 ₽ меньше минимальной скидки, установили для них скидку 250 руб</p>
+        <p id="discount-explanation" class="explanation" role="status" aria-live="polite">Для всех товаров установим скидку до 775 ₽, если доставка выйдет дешевле – вычтем меньше</p>
       </section>
       <footer class="actions">
         <button id="done" class="done" type="button">Готово</button>

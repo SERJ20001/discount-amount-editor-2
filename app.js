@@ -9,8 +9,9 @@ const sliderArea = document.querySelector(".slider-area");
 const track = document.querySelector("#track");
 const thumb = document.querySelector("#thumb");
 const trackFill = document.querySelector("#track-fill");
-const state = { draft: "50", saved: 50 };
 const discountLimits = { minimum: Number(range.min), maximum: Number(range.max) };
+const initialAmount = Math.round((discountLimits.minimum + discountLimits.maximum) / 2);
+const state = { draft: String(initialAmount), saved: initialAmount };
 const exceptionGroup = { minimum: 250, count: 12 };
 const assetPaths = [
   "assets/clear.svg", "assets/backspace.svg", "assets/thumb.svg",
