@@ -1,0 +1,26 @@
+@font-face {
+  font-family: "Avito Sans Text";
+  src: url("./fonts/avito/AvitoSansText-Regular.otf") format("opentype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: block;
+}
+
+@font-face {
+  font-family: "Avito Sans Text";
+  src: url("./fonts/avito/AvitoSansText-Medium.otf") format("opentype");
+  font-weight: 500;
+  font-style: normal;
+  font-display: block;
+}
+
+:root {
+  --avito-font-text: "Avito Sans Text", sans-serif;
+  --avito-font-display: "Avito Sans Display", sans-serif;
+  --avito-font-mono: "Avito Sans Text Mono", monospace;
+  font-synthesis: none;
+}
+
+body { font-family: var(--avito-font-text); }
+
+button, input, textarea, select { font-family: inherit; }

@@ -1,0 +1,49 @@
+{
+  "version": 1,
+  "assets": [
+    {
+      "id": "avito-font-AvitoSansText-Regular.otf",
+      "kind": "font",
+      "path": "assets/fonts/avito/AvitoSansText-Regular.otf",
+      "used": true,
+      "review": "unreviewed",
+      "family": "Avito Sans Text",
+      "weight": 400,
+      "style": "normal",
+      "source": {
+        "type": "bundled-plugin",
+        "plugin": "proto-builder-2",
+        "file": "AvitoSansText-Regular.otf"
+      }
+    },
+    {
+      "id": "avito-font-AvitoSansText-Medium.otf",
+      "kind": "font",
+      "path": "assets/fonts/avito/AvitoSansText-Medium.otf",
+      "used": true,
+      "review": "unreviewed",
+      "family": "Avito Sans Text",
+      "weight": 500,
+      "style": "normal",
+      "source": {
+        "type": "bundled-plugin",
+        "plugin": "proto-builder-2",
+        "file": "AvitoSansText-Medium.otf"
+      }
+    }
+  ],
+  "fontFaces": [
+    {
+      "family": "Avito Sans Text",
+      "weight": 400,
+      "style": "normal",
+      "path": "assets/fonts/avito/AvitoSansText-Regular.otf"
+    },
+    {
+      "family": "Avito Sans Text",
+      "weight": 500,
+      "style": "normal",
+      "path": "assets/fonts/avito/AvitoSansText-Medium.otf"
+    }
+  ]
+}

@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#606060">
+  <title>Размер скидки — второй вариант</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <div id="loading" role="status">
+    <p id="loading-copy">Загрузка…</p>
+    <button id="retry" type="button" hidden>Повторить</button>
+  </div>
+  <div id="stage">
+    <main id="app" aria-label="Размер скидки — второй вариант" inert hidden>
+      <section class="amount-panel" aria-label="Настройка скидки">
+        <div class="amount-field">
+          <div class="amount-value">
+            <span id="amount-mirror" aria-hidden="true">50</span>
+            <input id="amount" type="text" inputmode="none" autocomplete="off" spellcheck="false" aria-label="Скидка в рублях" aria-describedby="discount-explanation" value="50" maxlength="4">
+          </div>
+          <span class="currency" aria-hidden="true">₽</span>
+          <button id="clear" class="clear" type="button" aria-label="Очистить сумму">
+            <img src="assets/clear.svg" width="14" height="20" alt="">
+          </button>
+        </div>
+        <div class="slider-area">
+          <div id="track" class="track" aria-hidden="true">
+            <div id="track-fill" class="track-fill"></div>
+            <img id="thumb" src="assets/thumb.svg" width="16" height="16" alt="">
+          </div>
+          <input id="discount-range" class="range" type="range" min="50" max="1500" step="1" value="50" aria-label="Размер скидки" aria-describedby="discount-explanation" aria-valuetext="50 рублей">
+        </div>
+        <div id="exceptions" class="exceptions" role="group" aria-label="12 товаров с минимальной скидкой 250 рублей">
+          <span class="thumbnails" aria-hidden="true">
+            <span class="thumbnail"><img src="assets/product-1.png" alt=""></span>
+            <span class="thumbnail"><img src="assets/product-2.png" alt=""></span>
+            <span class="thumbnail"><img src="assets/product-3-base.png" alt=""><img src="assets/product-3.png" alt=""></span>
+          </span>
+          <span class="exception-amount">250 ₽</span>
+          <span class="minimum-marker" aria-hidden="true"></span>
+        </div>
+        <p id="discount-explanation" class="explanation" role="status" aria-live="polite">Для 12 товаров 50 ₽ меньше минимальной скидки, установили для них скидку 250 руб</p>
+      </section>
+      <footer class="actions">
+        <button id="done" class="done" type="button">Готово</button>
+      </footer>
+      <section class="keyboard" aria-label="Цифровая клавиатура">
+        <div class="keys">
+          <button type="button" data-key="1" aria-label="1"><span>1</span></button>
+          <button type="button" data-key="2" aria-label="2"><span>2</span><small>АБВГ</small></button>
+          <button type="button" data-key="3" aria-label="3"><span>3</span><small>ДЕЖЗ</small></button>
+          <button type="button" data-key="4" aria-label="4"><span>4</span><small>ИЙКЛ</small></button>
+          <button type="button" data-key="5" aria-label="5"><span>5</span><small>МНОП</small></button>
+          <button type="button" data-key="6" aria-label="6"><span>6</span><small>РСТУ</small></button>
+          <button type="button" data-key="7" aria-label="7"><span>7</span><small>ФХЦЧ</small></button>
+          <button type="button" data-key="8" aria-label="8"><span>8</span><small>ШЩЪЫ</small></button>
+          <button type="button" data-key="9" aria-label="9"><span>9</span><small>ЬЭЮЯ</small></button>
+          <span></span>
+          <button class="zero" type="button" data-key="0" aria-label="0"><span>0</span></button>
+          <button id="backspace" class="backspace" type="button" aria-label="Удалить последнюю цифру"><img src="assets/backspace.svg" width="117" height="46" alt=""></button>
+        </div>
+        <div class="home-indicator" aria-hidden="true"></div>
+      </section>
+      <span id="saved-status" class="sr-only" role="status" aria-live="polite"></span>
+    </main>
+  </div>
+</body>
+</html>
